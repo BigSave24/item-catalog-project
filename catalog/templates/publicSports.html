@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+
+  <title> TFSports Catalog</title>
+  <div class ="header">
+      <div id="title">
+        <h1>The Top Flight Sports Catalog</h1>
+      </div>
+      <br>
+      <br>
+    <div class="siteLinks">
+      <ul>
+        <li class="nav"><a href='{{url_for('sportsHome')}}'> BACK </a></li>
+        <li class="nav"><a href='{{url_for('sportsHome')}}'> HOME </a></li>
+        <li class="nav"><a href='{{url_for('loginPage')}}'> LOGIN </a></li>
+        <li class="nav"><a href='{{url_for('disconnect')}}'> LOGOUT </a></li>
+      </ul>
+    </div>
+  </div>
+<hr>
+</head>
+<body>
+  <div class ="page">
+		<div id="sportHeader">
+      <h2>{{sport.sport}}</h2>
+      <br>
+    </div>
+    <div class="flash">
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <ul>
+          {% for message in messages %}
+            <li id="message"><strong> {{ message }} </strong></li>
+          {% endfor %}
+          </ul>
+        {% endif %}
+      {% endwith %}
+    </div>
+    <div class="player">
+      {% for i in items %}
+      <div>
+        <br>
+        <br>
+        <p>{{i.name}}</p>
+        <p>{{i.position}}</p>
+        <p>{{i.team}}</p>
+        <p>{{i.career_stats}}</p>
+        <br><br>
+        </div>
+        <br>
+        <br>
+        {% endfor %}
+    </div>
+  <br>
+  <br>
+  </div>
+<br>
+<br>
+<br>
+</body>
+<footer></footer>
+</html>

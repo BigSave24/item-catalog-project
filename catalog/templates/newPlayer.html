@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+
+  <title> TFSports Catalog</title>
+  <div class ="header">
+      <div id="title">
+        <h1>The Top Flight Sports Catalog</h1>
+      </div>
+      <br>
+      <br>
+    <div class="siteLinks">
+      <ul>
+        <li class="nav"><a href='{{url_for('sportsHome')}}'> HOME </a></li>
+        <li class="nav"><a href='{{url_for('sportPlayer', sportID=sportID)}}'> BACK </a></li>
+        <li class="nav"><a href='{{url_for('loginPage')}}'> LOGIN </a></li>
+        <li class="nav"><a href='{{url_for('disconnect')}}'> LOGOUT </a></li>
+      </ul>
+    </div>
+  </div>
+<hr>
+</head>
+<body>
+  <div class ="page">
+    <div id="sportHeader">
+      <h2>Create New Player</h2>
+      <br>
+      <li id="sportNewLink"><a href='{{url_for('sportPlayer', sportID=sportID)}}'>CANCEL</a></li>
+    </div>
+    <div class="newPlayerForm">
+      <form action="{{url_for('newPlayer', sportID=sportID, sport_id=sportID )}}" method = 'POST'>
+          <p>Name:</p><br>
+          <input type='text' size='30' name='name' placeholder='Full Name'>
+          <p>Position:</p><br>
+          <input type='text' size='30' name='position' placeholder='Primary Position'>
+          <p>Team:</p><br>
+          <input type='text' size='30' name='team' placeholder='Current Team'>
+          <p>Career Stats:</p><br>
+          <input type='text' size='30' name='career_stats' placeholder='Top 3 Career Stats'>
+          <br>
+          <br>
+          <input type='submit' value='Create'>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

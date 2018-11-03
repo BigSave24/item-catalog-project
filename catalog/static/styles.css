@@ -1,0 +1,229 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: serif;
+  color: black;
+  background-color: white;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav a:hover, .nav a:active {
+  color: #660000;
+  border: 1px dotted #ff8080;
+}
+
+.header {
+  display: block;
+  position: fixed;
+  top: 0;
+  visibility: visible;
+  width: 100%;
+  margin: auto;
+  height: 200px;
+  text-align: center;
+  padding: 25px;
+  color:black;
+  background-color: #fbfbfb;
+  background-image: url('football-player.jpg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.siteLinks {
+  display: block;
+  position: relative;
+  top: 15px;
+  text-align: center;
+  font-weight: bold;
+  width: 45%;
+  height: 45%;
+  margin: auto;
+  padding: 5px;
+  color: blue;
+}
+
+.nav {
+  position: relative;
+  left: 10%;
+  text-align: center;
+  margin: auto;
+  width: 20%;
+  border: 1px dotted black;
+}
+
+.page {
+  display:block;
+  position: fixed;
+  top: 200px;
+  bottom: 25px;
+  margin: 0px auto;
+  width: 100%;
+  height: 95%;
+  padding-bottom: 15px;
+  background-image: url('sports-news-page.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: screen;
+}
+
+.flash {
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 35%;
+  height: 5%;
+  margin: auto;
+}
+
+.signinButton {
+  display: block;
+  position: relative;
+  top: 25px;
+  text-align: center;
+  width: 25%;
+  height: 5%;
+  margin: auto;
+}
+
+.allSports {
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 75%;
+  height: 35%;
+  margin: auto;
+  background: none;
+}
+
+.sportList {
+  display: block;
+  position: relative;
+  float: none;
+  margin: auto;
+  width: 35%;
+  height: 100%;
+  font-size: 2.5em;
+  padding: 10px;
+  background: None;
+}
+
+.sportList a:hover, .sportList a:hover {
+  font-size: 2em;
+}
+
+.player {
+  display: block;
+  position: relative;
+  bottom: 10px;
+  text-align: left;
+  font-size: 1.3em;
+  font-weight: 500;
+  width: 30%;
+  height: 65%;
+  margin: auto;
+  padding-left: 10%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.newPlayerForm , .editPlayerForm {
+  display: block;
+  position: relative;
+  top: 10px;
+  width: 30%;
+  height: 30%;
+  margin: auto;
+}
+
+.deletePlayerForm {
+  display: block;
+  position: relative;
+  top: 20px;
+  text-align: center;
+  top: 15px;
+  width: 20%;
+  height: 5%;
+  margin: auto;
+}
+
+
+#title {
+  position: relative;
+  top: 10px;
+  font-size: 2em;
+  text-align: center;
+  height: auto;
+}
+
+#sportHeader {
+  display: block;
+  position: relative;
+  top: 10px;
+  width: 30%;
+  height: 10%;
+  margin: auto;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 800;
+}
+
+#sportNewLink {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  width: 100%;
+  height: 10%;
+  margin: 0px auto;
+  text-align: center;
+  font-weight: bold;
+  list-style: none;
+}
+
+#message {
+  position: relative;
+  width: 100%;
+  word-wrap: normal;
+  text-align: center;
+  margin: auto;
+}
+
+#blankUserImg {
+  width: 75px;
+  height: 75px;
+}
+
+
+a:link, a:visited {
+    color: black;
+    background: none;
+}
+
+a:hover, a:active {
+  font-size: 25px;
+  text-shadow: 0 0 3px #FF0000;;
+}
