@@ -33,13 +33,13 @@
     <div class="newPlayerForm">
       <form action="{{url_for('newPlayer', sportID=sportID, sport_id=sportID )}}" method = 'POST'>
           <p>Name:</p><br>
-          <input type='text' size='30' name='name' placeholder='Full Name'>
+          <input type='text' size='30' name='name' placeholder='Full Name' required>
           <p>Position:</p><br>
-          <input type='text' size='30' name='position' placeholder='Primary Position'>
+          <input type='text' size='30' name='position' placeholder='Primary Position'required>
           <p>Team:</p><br>
-          <input type='text' size='30' name='team' placeholder='Current Team'>
+          <input type='text' size='30' name='team' placeholder='Current Team' required>
           <p>Career Stats:</p><br>
-          <input type='text' size='30' name='career_stats' placeholder='Top 3 Career Stats'>
+          <input type='text' size='30' name='career_stats' placeholder='Top 3 Career Stats' required>
           <br>
           <br>
           <input type='submit' value='Create'>
